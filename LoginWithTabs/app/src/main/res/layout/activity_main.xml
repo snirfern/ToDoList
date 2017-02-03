@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.laptop.loginwithtabs.MainActivity"
+    android:background="@android:color/background_light">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/asset_logo"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who are you?"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="           UserName"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:textColor="#000000"
+        android:id="@+id/editText"
+        android:visibility="visible"
+        />
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+
+
+        android:background="@drawable/launchbutton"
+        android:shadowColor="#A87E7E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        />
+
+    <TextView
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/what"
+        android:text="What would you like to do?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+          />
+    <Spinner
+        android:id="@+id/spinner"
+        android:visibility="invisible"
+        android:layout_marginTop="250dp"
+android:layout_centerHorizontal="true"       android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textAlignment="center"
+
+        style="@android:style/Widget.Spinner.DropDown"
+
+
+      ></Spinner>
+
+<Button
+    android:id="@+id/Choose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="350dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:background="@drawable/launchbutton"
+    android:shadowColor="#A87E7E"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:ems="10"
+    android:text="Launch"
+    android:visibility="gone"
+ />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        app:srcCompat="@drawable/lo"
+        />
+</RelativeLayout>

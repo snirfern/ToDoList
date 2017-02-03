@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0099cc">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Please enter new project details"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/Projects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/ProjectName"
+        android:text="Project Name:"
+        android:textSize="13dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/ProjectNameET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/ProjectDesc"
+            android:text="Project description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/ProjectDescET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:id="@+id/AddProject"
+            android:text="Add Project"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:visibility="invisible">
+
+
+
+    <TextView
+        android:id="@+id/TaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter task title"
+        android:textSize="13dp"
+
+        android:layout_gravity="center_horizontal"/>
+
+
+    <EditText
+        android:id="@+id/TaskTitleET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/TaskContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter task description"
+        android:textSize="13dp"
+
+        android:layout_gravity="center_horizontal"/>
+
+
+    <EditText
+        android:id="@+id/TaskContentET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/AddTask"
+            android:text="Add task"
+            android:background="@drawable/roundedbutton"
+            />
+</LinearLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"/>
+
+
+    <Button
+
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/Finish"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:shadowColor="#A8A8A8"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/finishbutton"
+        android:visibility="invisible"
+
+        />
+
+
+
+</LinearLayout>
